@@ -13,7 +13,13 @@ module.exports = {
     database: `${DB_NAME}`,
     host: DB_HOST,
     port: DB_PORT,
-    dialect: "postgres"
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   },
   test: {
     username: DB_USER,
@@ -21,7 +27,13 @@ module.exports = {
     database: `${DB_NAME}`,
     host: DB_HOST,
     port: DB_PORT,
-    dialect: "postgres"
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   },
   production: {
     username: 'dnlsiokuvoktbz',
@@ -29,6 +41,12 @@ module.exports = {
     database: 'postgresql-vertical-01581',
     host: 'ec2-52-44-13-158.compute-1.amazonaws.com',
     port: '5432',
-    dialect: "postgres"
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   }
 }
