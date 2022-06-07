@@ -1,5 +1,5 @@
 const {
-  DB_USER = "postgres",
+  DB_USER = "postgresdsd",
   DB_PASSWORD = "12345",
   DB_NAME = "bcr1231",
   DB_HOST = "127.0.0.1",

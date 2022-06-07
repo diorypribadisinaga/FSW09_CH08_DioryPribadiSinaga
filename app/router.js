@@ -1,4 +1,4 @@
-const express = require("express");
+
 const jwt = require("jsonwebtoken");
 const dayjs = require("dayjs");
 const bcrypt = require("bcryptjs");
@@ -45,6 +45,6 @@ function apply(app) {
   app.use(applicationController.handleError);
 
   return app;
-};
+}
 
 module.exports = { apply, }
